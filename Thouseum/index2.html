@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width", initial-scale=1.0>
+    <meta charset="UTF-8">
+    <title>Thouseum | For a good house, a good foundation</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="toggle" onclick="toggleMenu();"></div>
+    
+    <section class="banner" id="home">
+        <div class="imgSidebar">
+            <img src="images/thouseumverticallogo.png">
+        </div>
+        <div class="contentBx">
+            <h5 class="logoText">Thouseum</h5>
+            <div>
+                <h4><span>Hello!</span>, we are</h4>
+                <h2>Thouseum</h2>
+                <h4>For a good house, a good foundation</h4>
+                <a href="#About Us" class="btn">About Us</a>
+            </div>
+            <u1 class="sci">
+                <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100067622980292"><img src="images/facebook.png"></a></li>
+                <li><a target="_blank" href=https://twitter.com/thouseum><img src="images/twitter.png"></a></li>
+                <li><a target="_blank" href="https://www.instagram.com/thous.eum/"><img src="images/instagram.png"></a></li>
+            </u1>
+        </div>
+    </section>
+
+     <section class="about" id="About Us">
+         <div class="title white">
+             <h2>About Us</h2>
+             <p>For a good house, a good foundation</p>
+         </div>
+         <div class="content">
+             <div class="textBx">
+                 <p>We are a group of real estate developers who decided to found Thouseum, S.L. the 9th of March 2021. We founded the company with the objective of bringing houses with good foundation to the public. Our headquarters are located in Barcelona street in Girona.</p>
+             </div>
+             <div class="imgBx">
+                 <img src="images/thouseumhoritzontallogo.png">
+             </div>
+         </div>
+    </section>
+
+ <section class="services" id="Services">
+     <div class="title">
+        <h2>Services</h2>
+        <p>For a good house, a good foundation</p>
+     </div>
+     <div class="content">
+         <div class="servicesBx">
+             <img src="images/servicios.png">
+             <h2>Households</h2>
+             <p>Thouseum provides you with a large variety of households all over Catalonia to choose from.</p>
+         </div>
+         <div class="servicesBx">
+            <img src="images/servicios2.png">
+            <h2>Real Estate Advice</h2>
+            <p>Thouseum helps you choose the right house for you within your prefered budget and fulfilling all of your needs.</p>
+         </div>
+         <div class="servicesBx">
+            <img src="images/vídeo6.png">
+            <h2>Preview</h2>
+            <p>All of the household come with a preview so you can view the house in detail digitally.</p>
+    </div>
+ </section>
+
+
+ <section class="work" id="Work">
+    <div class="title">
+         <h2>Recent Work</h2>
+         <p>For a good house, a good foundation</p>
+      </div>
+      <div class="content">
+          <div class="workBx">
+              <div class="imgbx">
+                  <img src="images/vistageneral.png">
+              </div>
+              <div class="textBx">
+                  <h3>General View</h3>
+              </div>
+          </div>
+
+          <div class="workBx">
+            <div class="imgbx">
+                <img src="images/salad'estar.png">
+            </div>
+            <div class="textBx">
+                <h3>Living Room</h3>
+            </div>
+        </div>
+        <div class="workBx">
+            <div class="imgbx">
+                <img src="images/cuinaoffice.png">
+            </div>
+            <div class="textBx">
+                <h3>Open Concept Kitchen</h3>
+            </div>
+        </div>
+        <div class="workBx">
+            <div class="imgbx">
+                <img src="images/despatx.png">
+            </div>
+            <div class="textBx">
+                <h3>Office</h3>
+            </div>
+        </div>
+        <div class="workBx">
+            <div class="imgbx">
+                <img src="images/bany.png">
+            </div>
+            <div class="textBx">
+                <h3>Bathroom</h3>
+            </div>
+        </div>
+        <div class="workBx">
+            <div class="imgbx">
+                <img src="images/garatge.png">
+            </div>
+            <div class="textBx">
+                <h3>Garage</h3>
+            </div>
+        </div>
+        <div class="workBx">
+            <div class="imgbx">
+                <img src="images/habitació.png">
+            </div>
+            <div class="textBx">
+                <h3>Bedroom</h3>
+            </div>
+        </div>
+        <div class="workBx">
+            <div class="imgbx">
+                <img src="images/balcó.png">
+            </div>
+            <div class="textBx">
+                <h3>Balcony</h3>
+            </div>
+        </div>
+     </div>
+ </section>
+
+ <section class="contact" id="Contact">
+    <div class="title white">
+         <h2>Get in touch!</h2>
+         <p>For a good house, a good foundation</p>
+         <h4>E-Mail: thouseum.t@gmail.com</h4>
+     </div>
+ </section>
+
+ <div class="copyright">
+     <p>Copyright © 2021 Thouseum. All the rights reserved.</p>
+ </div>
+
+    <div class="sidebar">
+        <u1 class="menu">
+            <li><a target="_blank" href="index0.html" onclick="toggleMenu();">Index</a></li>
+            <li><a href="#Menu" onclick="toggleMenu();">Menu</a></li>
+            <li><a href="#About Us" onclick="toggleMenu();">About Us</a></li>
+            <li><a href="#Services" onclick="toggleMenu();">Services</a></li>
+            <li><a href="#Work" onclick="toggleMenu();">Work</a></li>
+            <li><a href="#Contact" onclick="toggleMenu();">Contact</a></li>
+        </u1>
+    </div>
+
+    <script>
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.toggle');
+            const sidebar = document.querySelector('.sidebar');
+            menuToggle.classList.toggle('active');
+            sidebar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
